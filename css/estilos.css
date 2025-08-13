@@ -293,3 +293,55 @@ a.btn-fill:active {
 }
 
 /* Clase 6 */
+/* Formularios */
+
+form {
+    border: 0.1rem solid hsl(208, 100%, 8%);
+    border-radius: 1rem;
+    padding: 2rem;
+    width: min(24rem, 100%);
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 0.25rem;
+}
+
+
+
+form span {
+    text-align: right;
+    color: hsl(286, 100%, 35%);
+    font-weight: 600;
+    /* visibility: hidden; */
+}
+
+form input,
+form button {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+
+    border: 0.1rem solid hsl(208, 100%, 8%);
+}
+
+form button {
+    background-color: hsl(208, 100%, 8%);
+    color: hsl(208, 100%, 94%);
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: hsl(286, 100%, 65%);
+    color: hsl(208, 100%, 8%);
+}
+
+form input:focus,
+form button:focus {
+    /* outline-offset: 0.5rem;
+    outline: 0.2rem solid hsl(286, 100%, 65%) */
+    outline: none;
+    border: 0.1rem solid hsl(286, 100%, 65%);
+}
+
