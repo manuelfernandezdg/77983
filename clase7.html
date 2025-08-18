@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clase 7</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
@@ -27,13 +31,59 @@
         <section id="bienvenida">
             <h1>Bienvenidos a la clase 7</h1>
         </section>
-        
+
         <section>
             <h1>Formularios</h1>
             <form action="">
                 <h2>Log in</h2>
-                
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Tu email" title="Recuerda ingresar el email con el cual te registraste." required>
+                <span>Mensaje de estado</span>
+
+                <label for="password">Contraseña</label>
+                <input type="password" name="password" id="password" placeholder="Elige tu contraseña" pattern="^(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{10,}$" title="La contraseña debe tener al menos 10 caracteres, 1 mayúscula, 1 número y 1 símbolo (!@#$%^&*)" required>
+                <span>Mensaje de estado</span>
+
+                <button>Ingresar</button>
             </form>
+            <br>
+            <form action="">
+                <h2>Mensaje</h2>
+
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" placeholder="¿Cómo te llamás?" required>
+                <span>Mensaje de estado</span>
+
+                <label for="asunto">Asunto</label>
+                <select name="asunto" id="asunto">
+                    <option value="miPedido" selected>Mi pedido</option>
+                    <option value="misubscripción">Mi subscripción</option>
+                    <option value="misNovedades">Mis novedades</option>
+                    <option value="otro">Otra consulta</option>
+                </select>
+                <span>Mensaje de estado</span>
+
+                <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje" id="mensaje"></textarea>
+                <span>Mensaje de estado</span>
+
+                <label>¿Cuáles son tus favoritos? <br>
+                    <input type="checkbox" name="fav" value="Comics">Comics
+                    <input type="checkbox" name="fav" value="Manga">Manga
+                    <input type="checkbox" name="fav" value="Libros">Libros
+                </label>
+
+                <label>Acepto los términos y condiciones
+                    <input type="checkbox" value="acepto" required>
+                </label>
+                <button>Enviar mensaje</button>
+            </form>
+        </section>
+        <section>
+            <h1>Material Symbols</h1>
+            <a href="https://fonts.google.com/icons?selected=Material+Symbols+Outlined:favorite:FILL@0;wght@400;GRAD@0;opsz@48&icon.size=44&icon.color=%2375FBFD&icon.query=favorite" target="_blank">Material Symbols en Google Fonts</a>
+
+            <span class="material-symbols-outlined">favorite</span>
         </section>
     </main>
 
@@ -43,6 +93,16 @@
             <li><a href="https://www.educacionit.com/curso-de-html" class="footer">Programa</a></li>
             <li><a href="https://alumni.education" class="footer">Alumni</a></li>
             <li><a href="https://discord.gg/SpRytRKP" class="footer">Discord</a></li>
+            <li>
+                <a class="contacto" href="https://wa.me/5491152638148" target="_blank">
+                    <img src="img/whatsapp-brands-solid-full.svg" alt="Contacto a nuestro Whatsapp">
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/manuelfernandezdg/77983" class="contacto" target="_blank">
+                    <img src="img/github-brands-solid-full.svg" alt="Link a nuestro repositorio">
+                </a>
+            </li>
         </ul>
     </footer>
 </body>

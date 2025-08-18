@@ -1,6 +1,20 @@
 /* Hoja de estilos */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=favorite');
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 100,
+  'wght' 800,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.material-symbols-outlined {
+    color: red;
+}
+
 .colores {
     color: hsl(208, 100%, 8%);
     color: hsl(208, 100%, 15%);
@@ -94,6 +108,11 @@ footer ul {
 
     display: flex;
     gap: 1rem;
+    align-items: center;
+}
+
+.contacto img {
+    width: 2rem;
 }
 
 /* Clase 3 */
