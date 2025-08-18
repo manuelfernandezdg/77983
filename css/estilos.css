@@ -28,11 +28,17 @@ body {
 header {
     background-color: hsl(208, 100%, 8%); /* Color del fondo del header */
     color: hsl(208, 100%, 94%); /* color de la tipografía */
-    padding: 1rem;
+    padding: 1rem 2rem 2rem;
 
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    gap: 1rem;
+}
+
+header h1 {
+    margin: 0;
 }
 
 header ul {
@@ -309,8 +315,6 @@ form {
     gap: 0.25rem;
 }
 
-
-
 form span {
     text-align: right;
     color: hsl(286, 100%, 35%);
@@ -345,3 +349,4 @@ form button:focus {
     border: 0.1rem solid hsl(286, 100%, 65%);
 }
 
+/* Clase 7 */
