@@ -24,6 +24,7 @@
                 <li><a class="header" href="clase5.html">Clase 5</a></li>
                 <li><a class="header" href="clase6.html">Clase 6</a></li>
                 <li><a class="header" href="clase7.html">Clase 7</a></li>
+                <li><a class="header" href="clase8.html">Clase 8</a></li>
             </ul>
         </nav>
     </header>
@@ -47,7 +48,7 @@
 
                 <button>Ingresar</button>
             </form>
-            <br>
+
             <form action="">
                 <h2>Mensaje</h2>
 
@@ -68,24 +69,38 @@
                 <textarea name="mensaje" id="mensaje"></textarea>
                 <span>Mensaje de estado</span>
 
-                <label>¿Cuáles son tus favoritos? <br>
-                    <input type="checkbox" name="fav" value="Comics">Comics
-                    <input type="checkbox" name="fav" value="Manga">Manga
-                    <input type="checkbox" name="fav" value="Libros">Libros
-                </label>
+                <div>¿Cuáles son tus favoritos? <br>
+                    <input type="checkbox" name="intereses1" value="Comics"><label for="intereses1">Comics</label>
+                    <input type="checkbox" name="intereses2" value="Manga"><label for="intereses2">Manga</label>
+                    <input type="checkbox" name="intereses3" value="Libros"><label for="intereses3">Libros</label>
+                </div>
 
                 <label>Acepto los términos y condiciones
-                    <input type="checkbox" value="acepto" required>
+                    <input type="checkbox" name="acepto" id="acepto" value="acepto" required>
                 </label>
                 <button>Enviar mensaje</button>
             </form>
         </section>
         <section>
-            <h1>Material Symbols</h1>
-            <a href="https://fonts.google.com/icons?selected=Material+Symbols+Outlined:favorite:FILL@0;wght@400;GRAD@0;opsz@48&icon.size=44&icon.color=%2375FBFD&icon.query=favorite" target="_blank">Material Symbols en Google Fonts</a>
+            <h1>Material adicional</h1>
+            <h2>Material Symbols</h2>
 
-            <span class="material-symbols-outlined">favorite</span>
+            <ul>
+                <li><a href="https://fonts.google.com/icons" target="_blank">Material Symbols en Google Fonts</a></li>
+                <li><a href="https://developers.google.com/fonts/docs/material_symbols?hl=es-419" target="_blank">Documentación sobre Material Symbols</a></li>
+            </ul>
+
+            <ul>
+                <li>Ejemplos de iconos:</li>
+                <li><span class="material-symbols-outlined">favorite</span></li>
+                <li><span class="material-symbols-outlined">home</span></li>
+                <li><span class="material-symbols-outlined">settings</span></li>
+            </ul>
+            
+            <h2>Proyecto en Figma (Alumni)</h2>
+            <a href="https://www.figma.com/design/Ad3nnHd1qsL8bSrv4a33dx/77983-DW---Taller-Figma?node-id=0-1&t=7kQgGv3b8119mZlj-1">Ejemplo</a>
         </section>
+
     </main>
 
     <footer>
@@ -93,7 +108,11 @@
         <ul>
             <li><a href="https://www.educacionit.com/curso-de-html" class="footer">Programa</a></li>
             <li><a href="https://alumni.education" class="footer">Alumni</a></li>
-            <li><a href="https://discord.gg/SpRytRKP" class="footer">Discord</a></li>
+            <li>
+                <a href="https://discord.gg/SpRytRKP" class="contacto">
+                    <img src="img/discord-brands-solid-full.svg" alt="Discord">
+                </a>
+            </li>
             <li>
                 <a class="contacto" href="https://wa.me/5491152638148" target="_blank">
                     <img src="img/whatsapp-brands-solid-full.svg" alt="Contacto a nuestro Whatsapp">
@@ -102,6 +121,11 @@
             <li>
                 <a href="https://github.com/manuelfernandezdg/77983" class="contacto" target="_blank">
                     <img src="img/github-brands-solid-full.svg" alt="Link a nuestro repositorio">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.figma.com/design/Ad3nnHd1qsL8bSrv4a33dx/77983-DW---Taller-Figma?node-id=0-1&t=7kQgGv3b8119mZlj-1" class="contacto">
+                    <img src="img/figma-brands-solid-full.svg" alt="Ejercicio Figma">
                 </a>
             </li>
         </ul>

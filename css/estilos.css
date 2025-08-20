@@ -1,19 +1,19 @@
-/* Hoja de estilos */
+/* Fuente del proyecto */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=favorite');
+/* Material Symbols */
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=favorite,home,settings&display=block');
+
+
 
 .material-symbols-outlined {
   font-variation-settings:
-  'FILL' 100,
+  'FILL' 0,
   'wght' 800,
   'GRAD' 0,
   'opsz' 48
 }
 
-.material-symbols-outlined {
-    color: red;
-}
 
 .colores {
     color: hsl(208, 100%, 8%);
@@ -89,10 +89,19 @@ footer {
     background-color: hsl(208, 100%, 8%);
     color: hsl(208, 100%, 94%);
     padding: 2rem;
+}
 
+.contenedor-footer {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    gap: 1rem;
+    width: min(65rem, 100%);
+    margin: 0 auto;
+}
+
+.contenedor-footer div {
+    display: flex;
     gap: 1rem;
 }
 
@@ -317,7 +326,7 @@ a.btn-fill:active {
     color: hsl(286, 100%, 65%);
 }
 
-/* Clase 6 */
+/* Clase 6 / 7 */
 /* Formularios */
 
 form {
@@ -325,7 +334,7 @@ form {
     border-radius: 1rem;
     padding: 2rem;
     width: min(24rem, 100%);
-    margin: 0 auto;
+    margin: 0 auto 2rem;
 
     display: flex;
     flex-direction: column;
@@ -342,7 +351,9 @@ form span {
 }
 
 form input,
-form button {
+form button,
+form select,
+form textarea {
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
 
@@ -361,11 +372,103 @@ form button:hover {
 }
 
 form input:focus,
-form button:focus {
+form button:focus,
+form select:focus,
+form textarea:focus {
     /* outline-offset: 0.5rem;
     outline: 0.2rem solid hsl(286, 100%, 65%) */
     outline: none;
     border: 0.1rem solid hsl(286, 100%, 65%);
 }
 
-/* Clase 7 */
+/* Clase 8 */
+/* Accesibilidad */
+.btn-icon-home,
+.btn-icon-notif,
+.btn-icon-fav {
+    display: block;
+    width: 2.5rem;
+    aspect-ratio: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.btn-icon-home {
+    background-image: url('../img/home-outline.svg');
+}
+
+.btn-icon-home:hover {
+    background-image: url('../img/home-fill.svg');
+}
+
+.btn-icon-notif {
+    background-image: url('../img/notifications-outline.svg');
+}
+
+.btn-icon-notif:hover {
+    background-image: url('../img/notifications-fill.svg');
+}
+
+.btn-icon-fav {
+    background-image: url('../img/favorite-outline.svg');
+}
+
+.btn-icon-fav:hover {
+    background-image: url('../img/favorite-fill.svg');
+}
+
+/* Los lectores de pantalla solo leen HTML. */
+.sr-only {
+    /* Quitarlo del área visible */
+    position: absolute;
+    top: -4000px;
+    left: -4000px;
+    /* Es para ocultar el contenido de ese elemento */
+    display: block;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+/* Buscador */
+.buscador {
+    border: none;
+    flex-direction: row;
+    align-items: center;
+}
+
+.buscador button {
+    background-image: url('../img/search-outline-dark.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    width: 2rem;
+    aspect-ratio: 1;
+}
+
+.buscador button:hover {
+    background-image: url('../img/search-outline-light.svg');
+}
+
+/* Tablas */
+table {
+    width: 100%;
+    text-align: center;
+    border: 0.1rem solid hsl(208, 100%, 8%);
+    border-collapse: collapse;
+}
+
+tr:hover {
+    background-color: hsl(208, 100%, 74%);
+}
+
+th,
+td {
+    border: 0.1rem solid hsl(208, 100%, 8%);
+    padding: 1rem;
+}
+
+
+table img {
+    width: 6rem;
+}
