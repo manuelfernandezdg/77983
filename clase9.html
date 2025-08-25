@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clase 1</title>
+    <title>Clase 9</title>
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
@@ -35,23 +34,60 @@
 
     <main>
         <section id="bienvenida">
-            <h1>Bienvenidos a la clase 1</h1>
+            <h1>Bienvenidos a la clase 9</h1>
         </section>
 
         <section>
-            <h1>HTML: Hypertext Markup Language</h1>
-            <h2>¿Qué es HTML?</h2>
-            <p>Es un lenguaje compuesto por <strong>etiquetas</strong> las cuales describen elementos. El navegador web es el encargado de interpretar el código y mostrarlo de forma comprensible a nuestros usuarios.</p>
-
-            <h2>Elementos HTML y semántica</h2>
-            <p>Son bloques de construcción para la maqueta de nuestra página Web. Los <strong>elementos HTML</strong>nos permiten incorporar texto, imágenes, vínculos, entre otros. HTML también proporciona un contexto semántico de elementos el cual describe su propósito, como por ejemplo títulos, párrafos, listas, enlances, citas y otros.</p>
+            <h1>Último ejercicio</h1>
+            <p>Deben maquetar estas dos secciones diseñadas en <strong>Figma</strong>, el diseño base lo pueden encontrar en el siguiente link: <a href="https://www.figma.com/design/Ad3nnHd1qsL8bSrv4a33dx/77983-DW---Taller-Figma?node-id=57-2&t=Wbz8Vaycc5LKVTvM-1" target="_blank">Figma</a></p>
         </section>
 
-        <section>
-            <h1>CSS, Cascade Styling Sheet</h1>
-            <h2>Hojas de estilo en cascada</h2>
-            <p>Css es el lenguaje que nos permite agregarle estilos a nuestro documento HTML. CSS describe cómo los elementos HTML deben ser vistos en el navegador. En este link podemos acceder al<a href="https://www.w3schools.com/css/default.asp" target="_blank"> manual oficial de CSS</a> </p>
+        <section id="contacto">
+            <div class="contenedor-contacto">
+                <div class="contacto-izq">
+                    <video muted autoplay loop>
+                        <source src="media/comic-1.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="contacto-der">
+                    <h1>Odisea</h1>
+                    <h2>Libros fantásticos</h2>
+                    <p>
+                        Estamos ubicados en el barrio de Congreso <br>
+                        Av. Rivadavia 1755 - CABA | 011-4444-6666 <br>
+                        Lunes a viernes de 11 a 20hs <br>
+                        contacto@odisealibros.com.ar
+                    </p>
+                </div>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8106030750346!2d-58.39388332341113!3d-34.608950472952465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac323de00bd%3A0xe2aafb46e55a230e!2sAv.%20Rivadavia%201755%2C%20C1033AAH%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1756134917789!5m2!1ses-419!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
+
+        <section id="producto">
+            <div class="contenedor-productos">
+                <div class="productos-izq">
+                    <img src="img/01.jpg" alt="H.P. Lovecraft, Obras Completas">
+                </div>
+                <div class="productos-der">
+                    <nav>
+                        <ul>
+                            <li><a class="prod-categorias" href="">Libros</a></li>
+                            <li><a class="prod-categorias" href="">Terror cósmico</a></li>
+                            <li><a class="prod-categorias" href="">H.P. Lovecraft</a></li>
+                        </ul>
+                    </nav>
+
+                    <h1>H.P. Lovecraft, Obras Completas</h1>
+
+                    <p>Este tomo recopila las obras completas del gran autor de terror, cuatro novelas cortas y cincuenta y tres cuentos.</p>
+                    <p>Escrita entre los años 1917 y 1935, esta colección presenta las criaturas fantásticas y las emociones sobrenaturales características de Lovecraft, así como muchos temas de ciencia ficción aterradores y aleccionadores, que han influido en algunos de los escritores y cineastas más importantes de la actualidad, incluidos <strong>Stephen King</strong>, <strong>Alan Moore</strong>, <strong>F. Paul Wilson</strong> y <strong>Guillermo del Toro.</strong></p>
+
+                    <h2>$74.000</h2>
+                    <a class="btn-fill" href="">Comprar</a>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <footer>
